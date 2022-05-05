@@ -1,0 +1,149 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.clearfix {
+   clear: both;
+}
+a {
+    text-decoration: none;
+    color: #ed549a;
+}
+li {
+    list-style: none;
+    line-height: 1.5rem;
+}
+p {
+    line-height: 1.5rem;
+}
+hr {
+    color: #852e5567;
+}
+.bg_1 {
+    background-color: #ed549a;
+
+}
+.social {
+    padding: 2%;
+}
+nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content:center;
+
+}
+
+nav a {
+    padding: 0 1.5%;
+    text-transform: uppercase;
+}
+
+
+header img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 25rem;
+}
+#a11000 {
+    display: block;
+    width: 6%;
+    margin: 2% auto;
+    clear: both;
+}
+#a01000 {
+    height: 25rem;
+    width: 25rem;
+    position: absolute;
+    margin-left: 19%;
+}
+
+.para1 img {
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:700px) {
+    
+.para1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 2%;
+
+}
+
+.para1 img {
+    height: 30rem;
+    width: 24rem;
+    align-self: center;
+    object-fit: cover;
+}
+}
+.intro {
+    text-align: left;
+    margin: 5%;
+}
+.intro h1 {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+
+.intro li {
+    float: left;
+    width: 22%;
+    margin: 1%;
+    margin-bottom: 4%;
+}
+
+@media screen and (min-width: 700px) {
+    
+
+.vision {
+    clear: both;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2%;
+    text-align: left;
+    justify-content: center;
+    
+}
+
+.vision ul {
+   margin-block-start: 0;
+   padding-inline-start: 0;
+   
+}
+.vision li {
+    justify-self: space-around;
+}
+
+.awards {
+    padding: 5% 1%;
+}
+.awards > ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2%;
+    padding: 0 2%;
+}
+}
+.brands {
+    margin:3%;
+}
+.brands h2 {
+    margin-bottom: 2%;
+}
+.brands img {
+    padding: 2%;
+}
+.gallery img {
+    height: 33rem;
+    object-fit: cover;
+    width: 33rem;
+    }
