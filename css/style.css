@@ -9,6 +9,10 @@ a {
     text-decoration: none;
     color: #ed549a;
 }
+ul {
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
 li {
     list-style: none;
     line-height: 1.5rem;
@@ -21,11 +25,38 @@ hr {
 }
 .bg_1 {
     background-color: #ed549a;
-
+    padding: 2%;
 }
 .social {
     padding: 2%;
+    display: inline-block;
 }
+.social h2 {
+font-size: 1rem;
+}
+
+@media screen and (min-width:700px) {
+    .social {
+        display: block;
+        margin-bottom: 4vh;
+    }
+    
+    .social a {
+        display: block;
+        float: right;
+        padding: 1%;
+    }
+ }
+
+#a01000 {
+    height: 20vh;
+    /* width: 100%; */
+    display: block;
+   margin: 0 auto;
+}
+
+
+
 nav {
     display: flex;
     margin: 0 auto;
@@ -39,12 +70,24 @@ nav a {
 }
 
 
-header img {
+/* header img {
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 25rem;
+} */
+
+.opening img {
+height: 50vh;
+width: 100vw;
+object-position: center;
+object-fit: cover;
 }
+
+
+
+@media screen and (min-width:700px) {
+    
 #a11000 {
     display: block;
     width: 6%;
@@ -55,15 +98,26 @@ header img {
     height: 25rem;
     width: 25rem;
     position: absolute;
-    margin-left: 19%;
+    left: 6%;
+    top: 18%;
+}
+}
+.intro h1 {
+    margin: 10% 0 40%;
+}
+
+.para1 p {
+    width:90%;
+display: block;
+margin: 0 auto;
 }
 
 .para1 img {
-    height: 25rem;
-    width: 25rem;
+    height: 20rem;
+    width: 20rem;
     object-fit: cover;
     display: block;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 
 @media screen and (min-width:700px) {
@@ -77,8 +131,8 @@ header img {
 }
 
 .para1 img {
-    height: 30rem;
-    width: 24rem;
+    height: 25rem;
+    width: 25rem;
     align-self: center;
     object-fit: cover;
 }
@@ -100,9 +154,47 @@ header img {
     margin-bottom: 4%;
 }
 
-@media screen and (min-width: 700px) {
+.products {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20%;
+}
+.products ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    margin: 0 auto;
+}
+.products li {
+    text-align: left;
     
+} 
+.products h1 {
+    padding-bottom: 10%;
+}
+.awards {
+    padding: 5% 1%;
+}
 
+.awards >ul {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+.awards i {
+    padding-top: 20%;
+    padding-bottom: 5%;
+    color: aliceblue;
+}
+.vision {
+    width: 90%;
+    display: block;
+    margin: 15% auto;
+    padding: 10% 5%;
+}
+
+@media screen and (min-width: 700px) {
 .vision {
     clear: both;
     padding: 3%;
@@ -114,18 +206,15 @@ header img {
     
 }
 
-.vision ul {
-   margin-block-start: 0;
-   padding-inline-start: 0;
-   
+.vision h3 {
+    text-align: center;
 }
 .vision li {
-    justify-self: space-around;
+    margin-left: 25%;
+
 }
 
-.awards {
-    padding: 5% 1%;
-}
+
 .awards > ul {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -134,16 +223,41 @@ header img {
 }
 }
 .brands {
-    margin:3%;
+    margin: 20% 0;
+}
+.brands img {
+text-align: center;
+width: 60%;
+padding: 10%;
+}
+
+.gallery img {
+height: 20rem;
+width: 20rem;
+object-fit: cover ;
+padding: 1% 4%;
+}
+
+@media screen and (min-width: 700px) {
+    
+.brands {
+    margin:6%;
 }
 .brands h2 {
-    margin-bottom: 2%;
+    margin: 4% 0;
 }
 .brands img {
     padding: 2%;
+    width: 25%;
+}
+
+.academy {
+    margin: 8%;
 }
 .gallery img {
     height: 33rem;
     object-fit: cover;
     width: 33rem;
     }
+
+}
