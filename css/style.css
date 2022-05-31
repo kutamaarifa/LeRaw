@@ -33,6 +33,7 @@ hr {
 }
 .social h2 {
 font-size: 1rem;
+    float: left;
 }
 
 @media screen and (min-width:700px) {
